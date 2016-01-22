@@ -11,7 +11,7 @@ import React, {
   View
 } from 'react-native';
 import App from './App/containers/App';
-import {reducerFunction} from './App/reducers/Reducers';
+import reducerFunction from './App/reducers/Reducers';
 
 /*
 导入redux所需组件

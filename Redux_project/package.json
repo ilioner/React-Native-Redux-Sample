@@ -9,5 +9,8 @@
     "react-native": "^0.17.0",
     "react-redux": "^3.1.2",
     "redux": "^3.0.5"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.0.1"
   }
 }

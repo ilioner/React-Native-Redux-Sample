@@ -10,6 +10,7 @@ import SearchBar from '../components/SearchBar';
 import TaskList from '../components/TaskList';
 import Item from '../models/Item';
 
+import {REDUCER_ADD_TODO} from '../reducers/AddTodoReducer';
 
 
 /*
@@ -84,9 +85,18 @@ const styles = StyleSheet.create({
 使用基于全局的state  包装我们所需的props
  */
 function select(state){
-    return {
-        taskItems:state.todoItem
-    };
+    console.log(state);
+    switch (state.reducerType){
+        case REDUCER_ADD_TODO:
+            return {
+                taskItems:state.AddTodoReducer.todoItem
+            };
+        default :
+            return {
+                taskItems:state.AddTodoReducer.todoItem
+            };
+    }
+
 }
 
 //包装component 该组建可默认使用store 注入dispatch和state到其默认的connect(select)(App)中

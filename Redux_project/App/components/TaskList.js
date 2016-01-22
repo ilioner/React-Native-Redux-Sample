@@ -25,6 +25,10 @@ class TaskList extends Component {
 
     }
 
+    componentWillMount() {
+        console.log(this.props);
+    }
+
     _renderRow(rowData){
 
         return (
