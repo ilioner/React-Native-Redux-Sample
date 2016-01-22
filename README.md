@@ -11,7 +11,7 @@
 * 在进行Redux相关配置时，按照官方文档
   
   ``` javascript
-  import {Provider} from 'react-redux/native'
+  import {Provider} from 'react-redux'
   ```
   
   进行配置，程序运行error，修改配置后允许通过
